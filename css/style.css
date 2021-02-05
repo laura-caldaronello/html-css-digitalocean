@@ -20,6 +20,9 @@
   .ms-debug .row {
     background-color: yellow;
   }
+  .ms-debug section {
+    background-color: blue;
+  }
 
   /* fine debug */
 
@@ -43,6 +46,11 @@
 
 .ms-jumbo-padding {
   padding-top: 100px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* fine classi specifiche */
