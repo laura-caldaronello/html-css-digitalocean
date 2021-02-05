@@ -1,0 +1,49 @@
+/* inizio classi preliminari */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* fine classi preliminari */
+
+/* inizio classi generiche */
+
+  /* inizio debug */
+
+  [class^="col-"] {
+    min-height: 50px;
+    background-color: pink;
+    border: 1px solid red;
+  }
+
+  /* fine debug */
+
+  .ms-full {
+    width: 100%;
+  }
+
+  .ms-wrapped-90 {
+    width: 90%;
+  }
+
+  .ms-white-box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .ms-m-v-15 {
+    margin: 15px auto;
+  }
+
+/* fine classi generiche */
+
+/* inizio classi specifiche */
+
+.ms-jumbo-padding {
+  padding-top: 100px;
+}
+
+/* fine classi specifiche */
