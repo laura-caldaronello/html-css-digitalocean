@@ -44,6 +44,36 @@
 
 /* inizio classi specifiche */
 
+.ms-container {
+
+}
+header .navbar-header button {
+  border: none;
+}
+.ms-navbar-toggle {
+  margin-top: 24px;
+  margin-bottom: 24px; /* sovrascrivo la caratteristiche di navbar toggle che permette al bottone di essere centrato. 24 è stato calcolato come 80px - l'altezza del button diviso per 2 */
+}
+.ms-navbar {
+  background-color: white;
+  box-shadow: none;
+  border: none;
+}
+.ms-navbar-brand {
+  height: 80px;
+  line-height: 50px; /* permette alla img di muoversi all'interno della linea e poter usare vertical align. Il valore è stato calcolato prendendo gli 80px e sottraendo i 30 totali di padding di navbar-brand  */
+}
+header .navbar-header img {
+  display: inline; /* agli inline-block non si applica vertical align */
+  width: 200px;
+  vertical-align: middle;
+}
+.ms-a {
+  /* la centratura dei link è possibile grazie al padding degli elementi "a", dunque aggiungo un margin per centrare negli 80px */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .ms-jumbo-padding {
   padding-top: 100px;
 }
