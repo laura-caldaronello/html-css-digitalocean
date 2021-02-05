@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Digital Ocean</title>
+    <title>DigitalOcean</title>
   </head>
   <body>
 
@@ -38,75 +40,55 @@
             <!-- inizio parte che collassa -->
             <div class="collapse navbar-collapse">
              <ul class="nav navbar-nav">
-               <li class="active"><a class="ms-a" href="#">Link <span class="sr-only">(current)</span></a></li>
-               <li><a href="#">Link</a></li>
-               <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                 <ul class="dropdown-menu">
-                   <li><a href="#">Action</a></li>
-                   <li><a href="#">Another action</a></li>
-                   <li><a href="#">Something else here</a></li>
-                   <li role="separator" class="divider"></li>
-                   <li><a href="#">Separated link</a></li>
-                   <li role="separator" class="divider"></li>
-                   <li><a href="#">One more separated link</a></li>
-                 </ul>
-               </li>
+               <li><a class="ms-a ms-dropdown" href="#">Products</a></li>
+               <li><a class="ms-a" href="#">Customers</a></li>
+               <li><a class="ms-a ms-dropdown" href="#">Community</a></li>
+               <li><a class="ms-a" href="#">Pricing</a></li>
              </ul>
 
             <!-- parte destra -->
              <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Link</a></li>
-
-                <!-- dropdown -->
-               <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                 <ul class="dropdown-menu">
-                   <li><a href="#">Action</a></li>
-                   <li><a href="#">Another action</a></li>
-                   <li><a href="#">Something else here</a></li>
-                   <li role="separator" class="divider"></li>
-                   <li><a href="#">Separated link</a></li>
-                 </ul>
+               <li><a class="ms-a" href="#">Docs</a></li>
+               <li><a class="ms-a ms-dropdown" href="#">Support</a></li>
+               <li><a class="ms-a" href="#">Login</a></li>
+               <li>
+                 <button class="btn btn-default ms-navbar-toggle" type="button" name="button">
+                   <a class="ms-a" href="#">Sign Up</a>
+                 </button>
                </li>
-
              </ul>
+
            </div> <!-- fine parte che collassa -->
 
          </div> <!--fine container-fluid -->
         </nav>
 
         <!-- jumbotron -->
-        <div class="jumbotron ms-jumbo-padding">
+        <div class="jumbotron ms-jumbo">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-6">
-                <h1>lorem</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <div class="ms-white-box ms-m-v-15">
+                <div class="ms-white-box ms-m-v-15 text-center">
+                  <h2>Deploy your app in seconds.</h2>
+                  <h2>Get started now.</h2>
                   <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputFile">File input</label>
-                      <input type="file" id="exampleInputFile">
-                      <p class="help-block">Example block-level help text here.</p>
-                    </div>
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Check me out
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default btn-block btn-primary">Create your account</button>
+                    <button type="submit" class="btn btn-default btn-block">
+                      <img class="text-left" src="img/google-icon.png" alt="google">
+                      Sign up with google
+                    </button>
                   </form>
+                  <h6>By signin up you agree to the <a href="#">Terms of Service</a></h6>
                 </div>
               </div>
             </div>
