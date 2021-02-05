@@ -13,53 +13,64 @@
   </head>
   <body>
 
-    <div class="ms-debug">
+    <div class="">
 
       <!-- inizio header -->
       <header class="clearfix"> <!-- altrimenti non comprende il margine inferiore del jumbotron -->
 
         <nav class="navbar navbar-default navbar-fixed-top ms-navbar">
           <div class="container ms-container">
-            <div class="navbar-header">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
 
-              <!-- hamburger -->
-              <button type="button" class="navbar-toggle collapsed ms-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+                <div class="navbar-header">
 
-              <!-- brand -->
-              <a class="navbar-brand ms-navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo">
-              </a>
+                  <!-- hamburger -->
+                  <button type="button" class="navbar-toggle collapsed ms-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
 
-            </div>
+                  <!-- brand -->
+                  <a class="navbar-brand ms-navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo">
+                  </a>
 
-            <!-- inizio parte che collassa -->
-            <div class="collapse navbar-collapse">
-             <ul class="nav navbar-nav">
-               <li><a class="ms-a ms-dropdown" href="#">Products</a></li>
-               <li><a class="ms-a" href="#">Customers</a></li>
-               <li><a class="ms-a ms-dropdown" href="#">Community</a></li>
-               <li><a class="ms-a" href="#">Pricing</a></li>
-             </ul>
+                </div>
 
-            <!-- parte destra -->
-             <ul class="nav navbar-nav navbar-right">
-               <li><a class="ms-a" href="#">Docs</a></li>
-               <li><a class="ms-a ms-dropdown" href="#">Support</a></li>
-               <li><a class="ms-a" href="#">Login</a></li>
-               <li>
-                 <button class="btn btn-default ms-navbar-toggle" type="button" name="button">
-                   <a class="ms-a" href="#">Sign Up</a>
-                 </button>
-               </li>
-             </ul>
+              </div>
 
-           </div> <!-- fine parte che collassa -->
+              <div class="col-md-8">
 
+                <!-- inizio parte che collassa -->
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a class="ms-a ms-dropdown" href="#">Products</a></li>
+                    <li><a class="ms-a" href="#">Customers</a></li>
+                    <li><a class="ms-a ms-dropdown" href="#">Community</a></li>
+                    <li><a class="ms-a" href="#">Pricing</a></li>
+                  </ul>
+
+                  <!-- parte destra -->
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a class="ms-a" href="#">Docs</a></li>
+                    <li><a class="ms-a ms-dropdown" href="#">Support</a></li>
+                    <li><a class="ms-a" href="#">Login</a></li>
+                    <li>
+                      <button class="btn btn-default ms-navbar-toggle" type="button" name="button">
+                        <a class="ms-a" href="#">Sign Up</a>
+                      </button>
+                    </li>
+                  </ul>
+
+                </div> <!-- fine parte che collassa -->
+
+              </div>
+
+
+           </div> <!--fine row -->
          </div> <!--fine container-fluid -->
         </nav>
 

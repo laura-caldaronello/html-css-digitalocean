@@ -48,15 +48,13 @@
 
 /* inizio classi specifiche */
 
-.ms-container {
-
-}
 header .navbar-header button {
   border: none;
 }
 .ms-navbar-toggle {
   margin-top: 24px;
   margin-bottom: 24px; /* sovrascrivo la caratteristiche di navbar toggle che permette al bottone di essere centrato. 24 è stato calcolato come 80px - l'altezza del button diviso per 2 */
+  font-size: 12px; /* se lo metto solo all'a interno il bottone si disallinea dalle altre scritte */
 }
 .ms-navbar {
   background-color: white;
@@ -79,11 +77,13 @@ nav li a.ms-a { /* mi serve questo livello di specificità per sovrascrivere i p
   /* per farli stare nello spazio a disposizione devo diminuire il padding in orizzontale */
   padding-left: 5px;
   padding-right: 5px;
+  font-size: 12px;
 }
 header .navbar-collapse .ms-dropdown::after {
   font-family: 'font awesome 5 free';
   font-weight: 900;
   content: ' \f078';
+  font-size: 10px;
 }
 .ms-jumbo {
   padding-top: 100px;
