@@ -12,20 +12,19 @@
 
   /* inizio debug */
 
-  [class^="col-"] {
+  .ms-debug [class^="col-"] {
     min-height: 50px;
     background-color: pink;
     border: 1px solid red;
+  }
+  .ms-debug .row {
+    background-color: yellow;
   }
 
   /* fine debug */
 
   .ms-full {
     width: 100%;
-  }
-
-  .ms-wrapped-90 {
-    width: 90%;
   }
 
   .ms-white-box {
