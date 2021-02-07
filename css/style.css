@@ -44,6 +44,16 @@
     margin: 15px auto;
   }
 
+  .ms-color-white {
+    color: white;
+    border-color: white;
+  }
+  .ms-color-grey {
+    color: grey;
+    border-color: grey;
+  }
+
+
 /* fine classi generiche */
 
 /* inizio classi specifiche */
@@ -103,20 +113,14 @@ header .navbar-collapse .ms-dropdown::after {
   transform: translateY(-50%);
   height: 14px;
 }
-/* generalizzare classi colori */
-.jumbotron .col-xs-12:first-child {
-  color: white;
-}
-.jumbotron .ms-white-box h2:last-of-type {
-  color: blue;
-}
 
 section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#customers .row-eq-height {
 
+#customers {
+  background-color: lightgrey;
 }
 #customers .col-xs-6 {
   text-align: center;
@@ -126,5 +130,51 @@ section {
   width: 90%;
 }
 
+#deploy {
+  background-color: white;
+}
+#deploy ul li {
+  border-left: 1px solid grey;
+  padding: 5px;
+}
+
+#designed {
+  background-color: lightgrey;
+}
+#designed img {
+  width: 60%;
+}
+
+#features {
+  background-color: white;
+}
+
+#regions {
+  background: linear-gradient(rgb(0 72 197),rgb(0 30 153));
+}
+#regions ul li {
+  border-bottom: 1px solid;
+  padding-top: 10px;
+}
+
+#teams {
+  background-color: lightgrey;
+}
+
+#account {
+  background: linear-gradient(rgb(0 72 197),rgb(0 30 153));
+}
+
+footer  {
+  background-color: rgb(3 28 78);
+}
+footer ul li:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer a {
+  color: grey;
+  font-weight: bold;
+}
 
 /* fine classi specifiche */

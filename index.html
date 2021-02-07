@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <div class="ms-debug">
+    <div class="">
 
       <!-- inizio header -->
       <header class="clearfix"> <!-- altrimenti non comprende il margine inferiore del jumbotron -->
@@ -78,14 +78,14 @@
         <div class="jumbotron ms-jumbo">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-6 ms-color-white">
                 <h1>The simplest cloud platform for developers & teams</h1>
                 <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
               </div>
               <div class="col-xs-12 col-sm-6">
                 <div class="ms-white-box ms-m-v-15 text-center">
                   <h2>Deploy your app in seconds.</h2>
-                  <h2>Get started now.</h2>
+                  <h2 class="text-primary">Get started now.</h2>
                   <form>
                     <div class="form-group">
                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -111,7 +111,7 @@
 
       <!-- inizio main -->
       <main>
-        <section class="text-center" id="customers">
+        <section id="customers" class="text-center">
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
@@ -148,42 +148,44 @@
 
         <section id="deploy">
           <div class="container">
-            <div class="row">
+            <div class="row text-center">
               <div class="col-xs-12">
-                <h3>titolo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Deploy and scale seamlessly</h3>
+                <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
               </div>
+            </div>
+            <div class="row">
               <div class="col-xs-12 col-sm-4">
-                <ul>
-                  <li>bordo sx</li>
-                  <li>bordo sx</li>
-                  <li>bordo sx</li>
-                  <li>bordo sx</li>
-                  <li>bordo sx</li>
+                <ul class="list-unstyled">
+                  <li>Deploy</li>
+                  <li>Manage</li>
+                  <li>Secure</li>
+                  <li>Scale</li>
+                  <li>Monitor</li>
                 </ul>
               </div>
               <div class="col-xs-12 col-sm-4">
-                <div class="col-xs-12">
-                  <i class="fas fa-bars">icona</i>
-                  <h3>titolo</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="ms-icon-box">
+                  <img src="img/cluster-deploy.svg" alt="">
+                  <h4>Clusted deployments</h4>
+                  <p>Provision multiple Droplets (virtual machines) in second with our control panel, CLI, or directly against our API.</p>
                 </div>
-                <div class="col-xs-12">
-                  <i class="fas fa-bars">icona</i>
-                  <h3>titolo</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="ms-icon-box">
+                  <img src="img/optimized-compute.svg" alt="">
+                  <h4>Optimized compute types</h4>
+                  <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-4">
-                <div class="col-xs-12">
-                  <i class="fas fa-bars">icona</i>
-                  <h3>titolo</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="ms-icon-box">
+                  <img src="img/one-click.svg" alt="">
+                  <h4>One-click apps</h4>
+                  <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                 </div>
-                <div class="col-xs-12">
-                  <i class="fas fa-bars">icona</i>
-                  <h3>titolo</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="ms-icon-box">
+                  <img src="img/global.svg" alt="">
+                  <h4>Global availability</h4>
+                  <p>Deploy to any of our data center regions around the world.</p>
                 </div>
               </div>
             </div>
@@ -194,11 +196,18 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 text-center">
-                <h2>designed</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="" alt="">
-                <h5>create compute</h5>
-                <i class="fas fa-bars">icona</i>
+                <h3>Designed for developers</h3>
+                <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+                <div class="">
+                  <img src="img/screenshot-createdroplet.jpg" alt="">
+                  <h5>Create compute servers in 55 seconds or less</h5>
+                </div>
+                <div class="text-primary">
+                  <i class="fas fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -208,64 +217,208 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
-                <h2>titolo</h2>
+                <h3>The features your business needs</h3>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-4">
-                <i class="fas fa-bars">icona</i>
-                <h4>titolo</h4>
-                <p>testotesto testotesto</p>
-                <p>
-                  <a href="#">pricing</a>
-                </p>
+                <div class="ms-icon-box">
+                  <img src="img/pred-pricing.svg" alt="">
+                  <h4>Predictable pricing</h4>
+                  <p>Leave complete pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+                  <h5><a href="#">Pricing ></a></h5>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-4">
-                <i class="fas fa-bars">icona</i>
-                <h4>titolo</h4>
-                <p>testotesto testotesto</p>
-                <p>
-                  <a href="#">pricing</a>
-                </p>
+                <div class="ms-icon-box">
+                  <img src="img/world-class.svg" alt="">
+                  <h4>World-class service</h4>
+                  <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
+                  <h5><a href="#">Support ></a></h5>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-4">
-                <i class="fas fa-bars">icona</i>
-                <h4>titolo</h4>
-                <p>testotesto testotesto</p>
-                <p>
-                  <a href="#">pricing</a>
-                </p>
+                <div class="ms-icon-box">
+                  <img src="img/reliable-platform.svg" alt="">
+                  <h4>Reliable platform</h4>
+                  <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their businesses with a 99.99% uptime SLA for all services.</p>
+                  <h5><a href="#">Security ></a></h5>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="regions">
+        <section id="regions" class="ms-color-white">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
-                <h2>titolo</h2>
+              <div class="col-xs-12 text-center">
+                <h3>Service your customers around the world from 12 regions.</h3>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-6">
-                <ul>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <ul>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
-                  <li>bordosotto</li>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-xs-2 text-uppercase">
+                        <p class="text-center">ams2</p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>Amsterdam, Netherlands</p>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a class="text-primary" href="#">Test speed ></a>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -276,22 +429,26 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 text-center">
-                <h2>teams</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="" alt="">
-                <h5>create compute</h5>
-                <i class="fas fa-bars">icona</i>
+                <h3>Development teams love DigitalOcean</h3>
+                <div class="">
+
+                </div>
+                <div class="text-primary">
+                  <i class="fas fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="account">
+        <section id="account" class="ms-color-white">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 text-center">
-                <h2>account</h2>
-                <button type="button" name="button">button</button>
+                <h3>Get started now.</h3>
+                <button class="btn text-primary" type="button" name="button">Create your account</button>
               </div>
             </div>
           </div>
@@ -303,107 +460,70 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4">
-              <h1>logo</h1>
+            <div class="col-xs-12 col-sm-12 col-md-4 ms-color-grey">
+              <img src="img/logo-small.png" alt="logo">
+              <h5>&copy; 2018 DigitalOcean, LLC. All rights reserved.</h5>
+              <h6>Proudly made in NY</h6>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <ul>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
+              <ul class="list-unstyled text-capitalize ms-color-white">
+                <li>company</li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">leadership</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">partner network</a></li>
+                <li><a href="#">referral program</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">press</a></li>
+                <li><a href="#">legal & security</a></li>
               </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <ul>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
+              <ul class="list-unstyled text-capitalize ms-color-white">
+                <li>products</li>
+                <li><a href="#">droplets</a></li>
+                <li><a href="#">spaces</a></li>
+                <li><a href="#">kubernets</a></li>
+                <li><a href="#">load balancers</a></li>
+                <li><a href="#">block storage</a></li>
+                <li><a href="#">tools & integrations</a></li>
+                <li><a href="#">one-Click apps</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">documentation</a></li>
+                <li><a href="#">release notes</a></li>
               </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <ul>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
+              <ul class="list-unstyled text-capitalize ms-color-white">
+                <li>community</li>
+                <li><a href="#">tutorials</a></li>
+                <li><a href="#">meetups</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">write for donations</a></li>
+                <li><a href="#">droplets for demos</a></li>
+                <li><a href="#">hatch</a></li>
+                <li><a href="#">shop swag</a></li>
+                <li><a href="#">research program</a></li>
+                <li><a href="#">currents research</a></li>
+                <li><a href="#">open source</a></li>
               </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <ul>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
-                <li>
-                  item
-                </li>
+              <ul class="list-unstyled text-capitalize ms-color-white">
+                <li>support</li>
+                <li><a href="#">contact support</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">network status</a></li>
               </ul>
             </div>
           </div>
