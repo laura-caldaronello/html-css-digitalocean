@@ -72,9 +72,17 @@
     color: grey;
     border-color: grey;
   }
+  .ms-color-lightgrey {
+    color: lightgrey;
+    border-color: lightgrey;
+  }
   .ms-color-black {
     color: black;
     border-color: black;
+  }
+
+  .ms-b {
+    font-weight: bold;
   }
 
 /* fine classi generiche */
@@ -88,7 +96,6 @@ header .navbar-header button {
   margin-top: 24px;
   margin-bottom: 24px; /* sovrascrivo la caratteristiche di navbar toggle che permette al bottone di essere centrato. 24 è stato calcolato come 80px - l'altezza del button diviso per 2 */
   font-size: 12px; /* se lo metto solo all'a interno il bottone si disallinea dalle altre scritte */
-  font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -96,7 +103,6 @@ header .navbar-header button {
   background-color: white;
   box-shadow: none;
   border: none;
-  font-weight: bold;
 }
 .ms-navbar-brand {
   height: 80px;
@@ -129,6 +135,9 @@ header .navbar-collapse .ms-dropdown::after {
 }
 .jumbotron h1 {
   font-size: 35px;
+}
+.jumbotron p {
+  font-weight: 400;
 }
 .jumbotron form button:last-child {
   position: relative;
@@ -188,6 +197,7 @@ section {
 }
 #regions .col-xs-2,
 #regions .col-xs-4 {
+  /* potevo mettere la classe ms-b ma non avevo voglia di metterla ovunque */
   font-weight: bold;
 }
 
@@ -196,13 +206,11 @@ footer  {
 }
 footer ul li:first-child {
   font-size: 1.2em;
-  font-weight: bold;
 }
 footer a,
 footer h5,
 footer h6 {
   color: rgb(122 133 157);
-  font-weight: bold;
 }
 
 /* fine classi specifiche */
