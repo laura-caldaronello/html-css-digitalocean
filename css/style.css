@@ -30,10 +30,6 @@
 
   /* fine debug */
 
-  .ms-full {
-    width: 100%;
-  }
-
   .ms-white-box {
     padding: 10px;
     border-radius: 5px;
@@ -52,7 +48,6 @@
     color: grey;
     border-color: grey;
   }
-
 
 /* fine classi generiche */
 
@@ -111,7 +106,7 @@ header .navbar-collapse .ms-dropdown::after {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  height: 14px;
+  height: 16px;
 }
 
 section {
@@ -119,50 +114,41 @@ section {
   padding-bottom: 20px;
 }
 
-#customers {
-  background-color: lightgrey;
-}
+  /* sfondi delle sections */
+  #customers,
+  #designed,
+  #teams {
+    background-color: #f3f5f9;
+  }
+  #regions,
+  #account {
+    background: linear-gradient(rgb(0 72 197),rgb(0 30 153));
+  }
+  #deploy,
+  #features {
+    background-color: white;
+  }
+
 #customers .col-xs-6 {
   text-align: center;
-  /* line-height: 80px; */
+  line-height: 120px; /* cambierà con la mediaquery */
 }
 #customers img {
   width: 90%;
 }
 
-#deploy {
-  background-color: white;
-}
 #deploy ul li {
   border-left: 1px solid grey;
   padding: 5px;
 }
 
-#designed {
-  background-color: lightgrey;
-}
 #designed img {
   width: 60%;
 }
 
-#features {
-  background-color: white;
-}
-
-#regions {
-  background: linear-gradient(rgb(0 72 197),rgb(0 30 153));
-}
 #regions ul li {
   border-bottom: 1px solid;
   padding-top: 10px;
-}
-
-#teams {
-  background-color: lightgrey;
-}
-
-#account {
-  background: linear-gradient(rgb(0 72 197),rgb(0 30 153));
 }
 
 footer  {
@@ -178,3 +164,14 @@ footer a {
 }
 
 /* fine classi specifiche */
+
+/* inizio mediaquery */
+
+/* questa mi serve per centratura verticale loghi */
+@media screen and (max-width: 767px) {
+  #customers .col-xs-6 {
+    line-height: 250px;
+  }
+}
+
+/* fine mediaquery */
