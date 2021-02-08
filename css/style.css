@@ -30,23 +30,51 @@
 
   /* fine debug */
 
-  .ms-white-box {
+  [class^="ms-white-box"] {
     padding: 10px;
-    border-radius: 5px;
     background-color: white;
   }
+  .ms-white-box1 {
+    border-radius: 5px;
+  }
+  .ms-white-box2 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+  }
 
+  .ms-m-v-50 {
+    margin: 50px auto;
+  }
   .ms-m-v-15 {
     margin: 15px auto;
+  }
+  .ms-m-t-child-5 > *:not(:first-child) {
+    margin-top: 5px;
+  }
+  .ms-m-l-child-5 > *:not(:first-child) {
+    margin-left: 5px;
+  }
+
+  .ms-chevron-size {
+    font-size: 20px;
   }
 
   .ms-color-white {
     color: white;
     border-color: white;
   }
+  .ms-color-primary {
+    color: #007bff;
+    border-color: #007bff;
+  }
   .ms-color-grey {
     color: grey;
     border-color: grey;
+  }
+  .ms-color-black {
+    color: black;
+    border-color: black;
   }
 
 /* fine classi generiche */
@@ -60,11 +88,15 @@ header .navbar-header button {
   margin-top: 24px;
   margin-bottom: 24px; /* sovrascrivo la caratteristiche di navbar toggle che permette al bottone di essere centrato. 24 è stato calcolato come 80px - l'altezza del button diviso per 2 */
   font-size: 12px; /* se lo metto solo all'a interno il bottone si disallinea dalle altre scritte */
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .ms-navbar {
   background-color: white;
   box-shadow: none;
   border: none;
+  font-weight: bold;
 }
 .ms-navbar-brand {
   height: 80px;
@@ -129,11 +161,15 @@ section {
     background-color: white;
   }
 
+#customers {
+  margin-top: -30px;
+}
 #customers .col-xs-6 {
   text-align: center;
   line-height: 120px; /* cambierà con la mediaquery */
 }
-#customers img {
+#customers img,
+#teams img {
   width: 90%;
 }
 
@@ -150,6 +186,10 @@ section {
   border-bottom: 1px solid;
   padding-top: 10px;
 }
+#regions .col-xs-2,
+#regions .col-xs-4 {
+  font-weight: bold;
+}
 
 footer  {
   background-color: rgb(3 28 78);
@@ -158,8 +198,10 @@ footer ul li:first-child {
   font-size: 1.2em;
   font-weight: bold;
 }
-footer a {
-  color: grey;
+footer a,
+footer h5,
+footer h6 {
+  color: rgb(122 133 157);
   font-weight: bold;
 }
 
@@ -167,11 +209,17 @@ footer a {
 
 /* inizio mediaquery */
 
-/* questa mi serve per centratura verticale loghi */
 @media screen and (max-width: 767px) {
-  #customers .col-xs-6 {
-    line-height: 250px;
+
+  #designed .ms-m-l-child-5 a,
+  #teams .ms-m-l-child-5 a {
+    display: none;
   }
+
+  #customers .col-xs-6 {
+    line-height: 250px; /* questa mi serve per centratura verticale loghi */
+  }
+
 }
 
 /* fine mediaquery */
