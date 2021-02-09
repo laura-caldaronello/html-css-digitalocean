@@ -406,28 +406,24 @@ footer h6 {
   background: radial-gradient(#007bff, white);
   z-index: 1;
   opacity: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .bubble:nth-of-type(2) {
   animation-name: bubble2;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 .bubble:nth-of-type(3) {
   left: 30px;
   transform: scale(0.8);
   animation-name: bubble3;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 .bubble:nth-of-type(4) {
   left: 20px;
   transform: scale(1.2);
   animation-name: bubble4;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 @keyframes bubble2 {
   49% {opacity: 0; left: 15px; top: 15%;}
@@ -450,7 +446,7 @@ footer h6 {
   100% {top: -110%; left: 20px;}
 }
 
-/* bonus 4: menu a tendina */
+/* bonus 4: menu a tendina<con transition */
 
 #dropdown {
   position: fixed;
