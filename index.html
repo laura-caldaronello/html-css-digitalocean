@@ -26,12 +26,32 @@
                 <div class="navbar-header">
 
                   <!-- hamburger -->
-                  <button type="button" class="navbar-toggle collapsed ms-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                  <div id="hamburger">
+                    <button type="button" class="navbar-toggle collapsed ms-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <!-- inizio menu a tendina -->
+                    <nav id="dropdown">
+                      <ul class="list-unstyled">
+                        <li><a class="ms-a ms-dropdown" href="#">Products</a></li>
+                        <li><a class="ms-a" href="#">Customers</a></li>
+                        <li><a class="ms-a ms-dropdown" href="#">Community</a></li>
+                        <li><a class="ms-a" href="#">Pricing</a></li>
+                        <li><a class="ms-a" href="#">Docs</a></li>
+                        <li><a class="ms-a ms-dropdown" href="#">Support</a></li>
+                        <li><a class="ms-a" href="#">Login</a></li>
+                        <li>
+                          <button class="btn btn-default ms-navbar-toggle ms-color-primary ms-b" type="button" name="button">
+                            <a class="ms-a" href="#">Sign Up</a>
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- fine menu a tendina -->
+                  </div>
 
                   <!-- brand -->
                   <a class="navbar-brand ms-navbar-brand" href="#">

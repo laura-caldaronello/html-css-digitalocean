@@ -449,3 +449,39 @@ footer h6 {
   75% {left: 25px;}
   100% {top: -110%; left: 20px;}
 }
+
+/* bonus 4: menu a tendina */
+
+#dropdown {
+  position: fixed;
+  height: 300px;
+  width: 100px;
+  padding: 20px;
+  padding-top: 81px;
+  border-radius: 5px;
+  top: 1px;
+  left: 100%;
+  background-color: rgb(3 28 78);
+  z-index: 1;
+}
+#dropdown li > .ms-a {
+  color: white;
+}
+#dropdown button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#dropdown ul {
+  margin: 0;
+}
+#hamburger button {
+  z-index: 2;
+}
+#hamburger:hover #dropdown {
+  left: calc(100% - 101px);
+  transition: left 0.5s;
+}
+#hamburger:not(:hover) #dropdown {
+  left: 100%;
+  transition: left 0.5s;
+}
